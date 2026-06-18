@@ -296,7 +296,7 @@
     <div id="login-page">
         <div class="login-container">
             <h1>Shaheen School</h1>
-            <div id="login-error" style="color: red; margin-bottom: 15px; display: none;">ভুল আইডি অথবা পাসওয়ার্ড! (Try: Admin / 2031)</div>
+            <div id="login-error" style="color: red; margin-bottom: 15px; display: none;">ভুল আইডি অথবা পাসওয়ার্ড!)</div>
             
             <div class="input-group">
                 <label>Log in ID or Mobile Number</label>
@@ -531,7 +531,7 @@ const firebaseConfig = {
         function handleLogin() {
             const id = document.getElementById('loginId').value.trim();
             const pass = document.getElementById('password').value;
-            if(id === 'admin' && pass === '1234') {
+            if(id === 'Admin' && pass === '2031') {
                 document.getElementById('login-page').style.display = 'none';
                 document.getElementById('main-app').style.display = 'block';
                 switchSection('dashboard');
